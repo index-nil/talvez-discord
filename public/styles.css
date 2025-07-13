@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #202225;
+  color: #eee;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#chatContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  display: none;
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+#msgInput {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  background: #2f3136;
+  color: #eee;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+#loginModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginModal.hidden {
+  display: none;
+}
+
+#loginBox {
+  background: #2f3136;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+#loginBox input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+#loginBox input[type="color"] {
+  height: 40px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#tabs {
+  display: flex;
+  gap: 10px;
+}
+
+#tabs div {
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  user-select: none;
+  background: #202225;
+}
+
+#tabs .active {
+  background: #5865f2;
+}
+
+#submitBtn {
+  margin-top: 15px;
+  background: #5865f2;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#message {
+  color: #f33;
+  margin-top: 10px;
+  min-height: 18px;
+}
+
+.message {
+  margin-bottom: 5px;
+}

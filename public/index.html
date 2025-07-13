@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SimpleChat</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loginModal">
+    <div id="loginBox">
+      <div id="tabs">
+        <div id="tabLogin" class="active">Login</div>
+        <div id="tabSignup">Signup</div>
+      </div>
+      <input type="text" id="username" placeholder="Username" autocomplete="off" />
+      <input type="password" id="password" placeholder="Password" autocomplete="off" />
+      <input type="password" id="repeatPassword" placeholder="Repeat password" autocomplete="off" style="display:none" />
+      <label for="color" id="colorLabel">Name Color</label>
+      <input type="color" id="color" value="#0088ff" />
+      <button id="submitBtn">Login</button>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <div id="chatContainer">
+    <div id="messages"></div>
+    <input id="msgInput" placeholder="Type a message and press Enter" autocomplete="off" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
