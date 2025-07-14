@@ -18,7 +18,7 @@ tabLogin.onclick = () => {
   tabLogin.classList.add('active')
   tabSignup.classList.remove('active')
   submitBtn.textContent = 'Login'
-  colorInput.style.display = 'none'
+  colorInput.style.display = 'none'         // esconde o color picker no login
   repeatPasswordInput.style.display = 'none'
   messageP.textContent = ''
 }
@@ -28,7 +28,7 @@ tabSignup.onclick = () => {
   tabSignup.classList.add('active')
   tabLogin.classList.remove('active')
   submitBtn.textContent = 'Signup'
-  colorInput.style.display = 'block'
+  colorInput.style.display = 'block'        // mostra o color picker no signup
   repeatPasswordInput.style.display = 'block'
   messageP.textContent = ''
 }
